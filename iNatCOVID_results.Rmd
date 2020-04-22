@@ -9,6 +9,17 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Despite being allowed to go outside for walks, etc. I expect people to be contributing to citizen science less than they were before COVID. Is that the case for iNaturalist?
+
+
+- [stay-at-home order data](https://github.com/sastoudt/covid_citizen_science/blob/master/stayAtHomeDates.csv) from [NYT](https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html), when not a statewide order, used earliest action by a county or region
+
+- iNatNice.csv: research grade observations from 2010-01-01 to 2020-04-10 within the US, subset from original GBIF data, (ACCESSED: 16 April 2020) GBIF Occurrence Download https://doi.org/10.15468/dl.35fcyr [not committed]
+
+- [iNatPrep.R](https://github.com/sastoudt/covid_citizen_science/blob/master/iNatPrep.R): how to go from GBIF to data used in analysis
+
+
+
 ```{r, warning=F, message=F}
 library(dplyr)
 library(stringr)
@@ -87,3 +98,9 @@ for(i in 2:nrow(stayAtHome)){ ## skip puerto rico
   print(byStatePlot(stayAtHome$state[i]))
 }
 ```
+
+## More to come...
+
+[Ben Goldstein](https://dochvam.github.io/) is going to help me do a similar analysis of eBird data once April's data drops. 
+
+Are you a big user of iNaturalist and/or eBird? Would you be willing to chat with me about how your usage of the app(s) has changed during this time? Reach out @sastoudt or e-mail me sstoudt 'at' berkeley.edu.

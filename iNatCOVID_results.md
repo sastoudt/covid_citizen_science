@@ -3,6 +3,28 @@ iNaturalist during COVID crisis
 Sara Stoudt
 4/17/2020
 
+Despite being allowed to go outside for walks, etc. I expect people to
+be contributing to citizen science less than they were before COVID. Is
+that the case for iNaturalist?
+
+  - [stay-at-home order
+    data](https://github.com/sastoudt/covid_citizen_science/blob/master/stayAtHomeDates.csv)
+    from
+    [NYT](https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html),
+    when not a statewide order, used earliest action by a county or
+    region
+
+  - iNatNice.csv: research grade observations from 2010-01-01 to
+    2020-04-10 within the US, subset from original GBIF data, (ACCESSED:
+    16 April 2020) GBIF Occurrence Download
+    <https://doi.org/10.15468/dl.35fcyr> \[not
+    committed\]
+
+  - [iNatPrep.R](https://github.com/sastoudt/covid_citizen_science/blob/master/iNatPrep.R):
+    how to go from GBIF to data used in analysis
+
+<!-- end list -->
+
 ``` r
 library(dplyr)
 library(stringr)
@@ -88,3 +110,12 @@ for(i in 2:nrow(stayAtHome)){ ## skip puerto rico
 ```
 
 ![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-3.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-4.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-5.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-6.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-7.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-8.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-9.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-10.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-11.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-12.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-13.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-14.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-15.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-16.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-17.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-18.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-19.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-20.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-21.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-22.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-23.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-24.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-25.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-26.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-27.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-28.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-29.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-30.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-31.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-32.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-33.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-34.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-35.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-36.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-37.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-38.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-39.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-40.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-41.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-42.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-43.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-44.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-45.png)<!-- -->![](iNatCOVID_results_files/figure-gfm/unnamed-chunk-6-46.png)<!-- -->
+
+## More to come…
+
+[Ben Goldstein](https://dochvam.github.io/) is going to help me do a
+similar analysis of eBird data once April’s data drops.
+
+Are you a big user of iNaturalist and/or eBird? Would you be willing to
+chat with me about how your usage of the app(s) has changed during this
+time? Reach out @sastoudt or e-mail me sstoudt ‘at’ berkeley.edu.
